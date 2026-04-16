@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot Development Hub</title>
+    <style>
+        :root {
+            --discord-blurple: #5865F2;
+            --discord-dark: #23272a;
+            --discord-black: #090909;
+            --accent: #57F287;
+            --text: #ffffff;
+        }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: var(--discord-black); color: var(--text); margin: 0; padding: 20px; }
+        header { text-align: center; padding: 40px 0; border-bottom: 2px solid var(--discord-blurple); }
+        h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; max-width: 1200px; margin: 40px auto; }
+        
+        .card { background: var(--discord-dark); border-radius: 15px; padding: 25px; border: 1px solid #333; transition: 0.3s; position: relative; overflow: hidden; }
+        .card:hover { transform: translateY(-10px); border-color: var(--discord-blurple); box-shadow: 0 10px 20px rgba(88, 101, 242, 0.2); }
+        .card h2 { color: var(--discord-blurple); margin-top: 0; font-size: 1.4rem; }
+        .card p { font-size: 0.9rem; color: #b9bbbe; line-height: 1.4; }
+        
+        .btn { display: inline-block; background: var(--discord-blurple); color: white; text-decoration: none; padding: 10px 20px; border-radius: 5px; font-weight: bold; margin-top: 15px; transition: 0.2s; }
+        .btn:hover { background: #4752c4; }
+        
+        .badge { background: var(--accent); color: black; padding: 2px 8px; border-radius: 10px; font-size: 0.7rem; font-weight: bold; position: absolute; top: 20px; right: 20px; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🤖 BOT DEVELOPMENT HUB</h1>
+    <p>Las mejores herramientas para crear, programar y alojar bots</p>
+</header>
+
+<div class="grid">
+    <!-- REPLIT -->
+    <div class="card">
+        <span class="badge">HOSTING</span>
+        <h2>Replit</h2>
+        <p>Plataforma en la nube para programar en Python/Node.js. Ideal para desarrollo rápido y hosting 24/7 usando "Always On".</p>
+        <a href="https://replit.com" target="_blank" class="btn">Abrir Replit</a>
+    </div>
+
+    <!-- DISCORD DEVELOPER PORTAL -->
+    <div class="card">
+        <span class="badge">CORE</span>
+        <h2>Dev Portal</h2>
+        <p>El sitio oficial de Discord. Aquí creas la aplicación, obtienes el <b>TOKEN</b> de tu bot y configuras los "Intents".</p>
+        <a href="https://discord.com" target="_blank" class="btn">Ir al Portal</a>
+    </div>
+
+    <!-- BOTGHOST -->
+    <div class="card">
+        <span class="badge">NO-CODE</span>
+        <h2>BotGhost</h2>
+        <p>Crea bots potentes sin saber programar. Interfaz visual tipo "arrastrar y soltar" con hosting gratuito incluido.</p>
+        <a href="https://botghost.com" target="_blank" class="btn">Probar No-Code</a>
+    </div>
+
+    <!-- UPTIME ROBOT -->
+    <div class="card">
+        <span class="badge">UTILITY</span>
+        <h2>UptimeRobot</h2>
+        <p>Sirve para que tu bot no se duerma en Replit. Envía un "ping" cada 5 minutos para mantener el código vivo.</p>
+        <a href="https://uptimerobot.com" target="_blank" class="btn">Configurar Uptime</a>
+    </div>
+
+    <!-- BDFD -->
+    <div class="card">
+        <span class="badge">MOBILE</span>
+        <h2>Bot Designer (BDFD)</h2>
+        <p>La mejor aplicación para Android e iOS para programar bots directamente desde el celular usando su propia lógica.</p>
+        <a href="https://botdesigner.com" target="_blank" class="btn">Ver App</a>
+    </div>
+
+    <!-- DISCORD.PY DOCS -->
+    <div class="card">
+        <span class="badge">DOCS</span>
+        <h2>Discord.py / Disnake</h2>
+        <p>Documentación oficial para programadores de Python. Aquí encuentras todos los comandos y eventos posibles.</p>
+        <a href="https://readthedocs.io" target="_blank" class="btn">Leer Guía</a>
+    </div>
+</div>
+
+<footer style="text-align: center; color: #555; padding: 40px;">
+    <p>Kit de Desarrollo de Bots - Terminal X Edition</p>
+</footer>
+
+</body>
+</html>
